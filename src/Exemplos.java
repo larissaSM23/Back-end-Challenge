@@ -20,12 +20,12 @@ public class Exemplos {
 
     // Capitulo 2: O golpe critico (casting)
     public static void casting() {
-        // Widening: monstro pequeno em jaula grande. O Java faz sozinho.
+        // Conversão Implícita: monstro pequeno em jaula grande. O Java faz sozinho.
         int ataques = 3;
         double ataquesDecimal = ataques;
-        System.out.println("Widening: int " + ataques + " virou double " + ataquesDecimal);
+        System.out.println("Conversao Implicita: int " + ataques + " virou double " + ataquesDecimal);
 
-        // Narrowing: monstro grande em jaula pequena. Voce forca com (tipo).
+        // Conversão Explícita: monstro grande em jaula pequena. Forca com (tipo).
         double danoCritico = 22.5;
         int vidaLobisomem = 100;
 
@@ -34,7 +34,7 @@ public class Exemplos {
         System.out.println("Dano real aplicado: " + (int) danoCritico + " (o .5 sumiu)");
         System.out.println("Vida do lobisomem agora: " + vidaLobisomem);
 
-        // Overflow
+        // Estouro - Valor maior que a capacidade.
         byte fantasmas = 127;
         fantasmas++;
         System.out.println("Bonus: byte 127 + 1 = " + fantasmas);

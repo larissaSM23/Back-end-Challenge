@@ -45,7 +45,6 @@ public class Main {
                     break;
             }
         } while (!opcao.equals("0"));
-
         teclado.close();
     }
 }
